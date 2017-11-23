@@ -41,7 +41,7 @@ class Student
   sql = "SELECT * FROM students
   WHERE id = $1"
   values = [id]
-  pizza = SqlRunner.run( sql, values )
+  student = SqlRunner.run( sql, values )
   result = Student.new( student.first )
   return result
 end
