@@ -2,4 +2,6 @@
        <p><a href="/students/<%= student.id %>"><%= student.first_name %> <%= student.last_name %></p>
        <hr>
   <% end %>
-  <a href="students/new">Add student</a>
+  <form method="get" action="/students/new">
+    <button type="submit">Add student</button>
+  </form>

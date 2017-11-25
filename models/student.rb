@@ -58,4 +58,8 @@ end
     values = [@id]
     SqlRunner.run( sql, values)
   end
+
+  def find_house
+    sql = "SELECT * FROM students"
+  end
 end
